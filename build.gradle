@@ -1,0 +1,73 @@
+plugins {
+    id 'org.springframework.boot' version '2.2.6.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+    id 'java'
+}
+
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.8'
+
+    implementation 'org.projectlombok:lombok'
+
+    implementation group: 'org.springframework.batch', name: 'spring-batch-core', version: '4.0.0.RELEASE'
+//Thanks for using https://jar-download.com
+    implementation group: 'org.springframework', name: 'spring-webflux', version: '5.0.8.RELEASE'
+//Thanks for using https://jar-download.com
+    implementation group: 'org.springframework.hateoas', name: 'spring-hateoas', version: '1.0.5.RELEASE'
+//Thanks for using https://jar-download.com
+    implementation group: 'com.hazelcast', name: 'hazelcast', version: '1.7.1'
+//Thanks for using https://jar-download.com
+    implementation group: 'org.apache.johnzon', name: 'jsonb-api', version: '0.9.3-incubating'
+//Thanks for using https://jar-download.com
+    implementation group: 'org.springframework.data', name: 'spring-data-jdbc', version: '1.1.10.RELEASE'
+//Thanks for using https://jar-download.com
+    implementation group: 'org.springframework.data', name: 'spring-data-couchbase', version: '3.2.10.RELEASE'
+//Thanks for using https://jar-download.com
+    implementation group: 'org.springframework.session', name: 'spring-session-core', version: '2.3.1.RELEASE'
+//Thanks for using https://jar-download.com
+    implementation group: 'org.springframework.security', name: 'spring-security-config', version: '4.2.19.RELEASE'
+//Thanks for using https://jar-download.com
+    implementation group: 'org.springframework.security', name: 'spring-security-oauth2-resource-server', version: '5.4.1'
+//Thanks for using https://jar-download.com
+
+    implementation group: 'org.springframework.security', name: 'spring-security-oauth2-jose', version: '5.1.13.RELEASE'
+//Thanks for using https://jar-download.com
+    implementation group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: '2.3.4.RELEASE'
+//Thanks for using https://jar-download.com
+    implementation group: 'de.flapdoodle.embed', name: 'de.flapdoodle.embed.process', version: '1.22'
+//Thanks for using https://jar-download.com
+    implementation group: 'org.springframework.security', name: 'spring-security-saml2-service-provider', version: '5.2.7.RELEASE'
+//Thanks for using https://jar-download.com
+    implementation group: 'org.springframework.security', name: 'spring-security-oauth2-client', version: '5.1.13.RELEASE'
+//Thanks for using https://jar-download.com
+    implementation group: 'org.springframework.data', name: 'spring-data-mongodb', version: '3.0.4.RELEASE'
+//Thanks for using https://jar-download.com
+    implementation group: 'org.mongodb', name: 'mongodb-driver-sync', version: '3.8.2'
+//Thanks for using https://jar-download.com
+    implementation group: 'org.springframework.data', name: 'spring-data-couchbase', version: '4.0.4.RELEASE'
+//Thanks for using https://jar-download.com
+    compile group: 'org.neo4j', name: 'neo4j-ogm-core', version: '3.0.0-M02'
+//Thanks for using https://jar-download.com
+
+
+
+
+
+    annotationProcessor 'org.projectlombok:lombok'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
